@@ -33,7 +33,7 @@
       </div>
 
       <div class="button-container">
-        <a href="#content" class="button__learn-more">learn more</a>
+        <button class="button__learn-more">learn more</button>
         <hr class="hr--tiny">
       </div>
     </section>
@@ -44,7 +44,7 @@
     <section id="about">
       <div class="about-container">
         <h3 class="title">about</h3>
-        <p class="p--gold">Hey there! If you are reading this right now you are probably in search for a front end developer that knows what they are doing. Sound right? Great, you're in the right place. My name is Brandon and I'm and all around geeky guy that has a whole lot of  passsion, and even more dedication, to learning everything there is to know about how the web works.  </p>
+        <p class="p--gold">Hey there! If you are reading this right now you are probably in search for a front end developer that knows what they are doing. Sound right? Great, you're in the right place. My name is Brandon and I'm an all around geeky guy that has a whole lot of passsion, and even more dedication, to learning everything there is to know about how the web works. </p>
       </div>
     </section>
 
@@ -158,6 +158,16 @@
   <footer>
 
   </footer>
+  <script>
+    window.addEventListener('load', function() {
+          document.querySelector('.button__learn-more').addEventListener('click', function(e) {
+            e.preventDefault();
+            document.querySelector('#about').scrollIntoView({
+              behavior: 'smooth'
+            });
+          });
+        });
+  </script>
 </body>
 
 </html>
